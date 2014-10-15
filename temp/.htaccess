@@ -1,0 +1,4 @@
+AuthUserFile ""
+AuthType Basic
+AuthName "Enter username and password"
+require valid-user

@@ -1,0 +1,41 @@
+{
+    "name": "start-template",
+    "version": "1.0.0",
+    "description": "my start template",
+    "main": "Gruntfile.js",
+    "dependencies": {
+        "grunt": "^0.4.5",
+        "grunt-concat": "^0.1.6",
+        "grunt-contrib-concat": "^0.5.0",
+        "grunt-contrib-watch": "^0.6.1",
+        "grunt-min": "^0.1.0",
+        "load-grunt-tasks": "^0.6.0"
+    },
+    "devDependencies": {
+        "grunt": "^0.4.5",
+        "grunt-contrib-concat": "^0.5.0",
+        "grunt-contrib-watch": "^0.6.1",
+        "grunt-min": "^0.1.0",
+        "load-grunt-tasks": "^0.6.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jestersimpps/start-template.git"
+    },
+    "keywords": [
+        "start",
+        "template",
+        "angular",
+        "firebase"
+    ],
+    "author": "jestersimpps",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jestersimpps/start-template/issues"
+    },
+    "homepage": "https://github.com/jestersimpps/start-template"
+}
