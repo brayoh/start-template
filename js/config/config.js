@@ -1,4 +1,4 @@
-tasks.config(['$urlRouterProvider', '$stateProvider',
+app.config(['$urlRouterProvider', '$stateProvider',
     function($urlRouterProvider, $stateProvider) {
 
         $urlRouterProvider.otherwise('/');
@@ -20,7 +20,7 @@ tasks.config(['$urlRouterProvider', '$stateProvider',
     }
 ]);
 
-tasks.config(['flowFactoryProvider',
+app.config(['flowFactoryProvider',
     function(flowFactoryProvider, $rootScope) {
         flowFactoryProvider.defaults = {
             target: 'upload.php',
@@ -38,7 +38,7 @@ tasks.config(['flowFactoryProvider',
     }
 ]);
 
-tasks.filter('percentage', ['$filter',
+app.filter('percentage', ['$filter',
     function($filter) {
         return function(input, decimals) {
             return $filter('number')(input * 100, decimals) + '%';
@@ -46,7 +46,7 @@ tasks.filter('percentage', ['$filter',
     }
 ]);
 
-tasks.run(['$rootScope', '$state', '$firebase',
+app.run(['$rootScope', '$state', '$firebase',
 
     function($rootScope, $state, $firebase) {
         $rootScope.$on("$stateChangeStart", function(event, toState, toParams, fromState, fromParams) {
